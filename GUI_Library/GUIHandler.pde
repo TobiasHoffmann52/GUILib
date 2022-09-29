@@ -15,7 +15,7 @@ class GUIHandler {
 
   void displayAll() {
     for (Komponent k : mineKomponenter) {
-      k.tegn ();
+      k.tegn();
     }
   }
 

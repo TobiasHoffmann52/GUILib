@@ -9,7 +9,7 @@ class Button extends Komponent {
     knapH = h;
   }
 
-  void registrerKlik() {
+  void detectClick() {
     if (mouseX>knapX && mouseX<(knapX+knapB) && mouseY>knapY && mouseY<(knapY+knapH)) {
       knapOn = !knapOn;
     }
@@ -47,7 +47,7 @@ class ToggleKnap extends Button {
     super(x, y, b, h);
   }
 
-  void registrerKlik() {
+  void detectClick() {
     if ( mouseX>knapX && mouseX<(knapX+knapB) && mouseY>knapY && mouseY<(knapY+knapH)) {
 
       knapOn = !knapOn;
