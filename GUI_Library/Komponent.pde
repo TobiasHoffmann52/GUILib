@@ -1,0 +1,6 @@
+class Komponent {
+  
+  void tegn(){}
+  
+  
+}
