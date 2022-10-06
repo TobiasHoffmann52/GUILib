@@ -70,3 +70,26 @@ class ToggleKnap extends Button {
     }
   }
 }
+
+class TextField extends Button {
+  int      tekstX, tekstY, tekstW, tekstH;
+  String content = "";
+
+  TextField(int x, int y, int b, int h) {
+   super(x, y, b, h);
+  }
+
+  void tegn(int x, int y, int b, int h) {
+    fill(255);
+    rect(x, y, b, h);
+    fill(0);
+    text(content, x, y);
+  }
+  void keyPressed(){
+    if (keyCode != 8) {
+      content += key;
+    } else {
+      content = content.substring(0, content.length()-1);
+    }
+  }
+}
